@@ -19,9 +19,7 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
         private readonly string description;
         private readonly string siteUrl;
         private readonly MediaSeason? season;
-
-        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-        private readonly int seasonYear;
+        private readonly int? seasonYear;
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         private readonly int duration;
@@ -36,9 +34,7 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
         private readonly int popularity;
 
         private readonly List<MediaTag> tags;
-
-        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-        private readonly bool isAdult;
+        private readonly bool? isAdult;
 
         public int Id => id;
         public MediaTitle Title => title;
@@ -46,13 +42,13 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
         public string Description => description;
         public string SiteUrl => siteUrl;
         public MediaSeason? Season => season;
-        public int SeasonYear => seasonYear;
+        public int? SeasonYear => seasonYear;
         public int Duration => duration;
         public MediaCoverImage CoverImage => coverImage;
         public List<string> Genres => genres;
         public int MeanScore => meanScore;
         public int Popularity => popularity;
         public List<MediaTag> Tags => tags;
-        public bool IsAdult => isAdult;
+        public bool? IsAdult => isAdult;
     }
 }
