@@ -13,11 +13,13 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
     [JsonObject(MemberSerialization.Fields)]
     public class MediaList
     {
-        private readonly MediaListStatus status;
+        private readonly MediaListStatus? status;
         private readonly Media media;
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         private readonly int progress;
         
-        public MediaListStatus Status => status;
+        public MediaListStatus? Status => status;
         public Media Media => media;
         public int Progress => progress;
     }
