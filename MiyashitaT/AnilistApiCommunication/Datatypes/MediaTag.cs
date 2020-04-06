@@ -13,14 +13,20 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
     [JsonObject(MemberSerialization.Fields)]
     public class MediaTag
     {
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         private readonly int id;
+
         private readonly string name;
         private readonly string description;
         private readonly string category;
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        private readonly int rank;
 
         public int Id => id;
         public string Name => name;
         public string Description => description;
         public string Category => category;
+        public int Rank => rank;
     }
 }
