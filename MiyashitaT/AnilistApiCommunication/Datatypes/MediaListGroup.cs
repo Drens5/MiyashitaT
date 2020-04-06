@@ -1,14 +1,8 @@
 ﻿using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MiyashitaT.AnilistApiCommunication.Datatypes
 {
-    public enum MediaListStatus { CURRENT, PLANNING, COMPLETED, DROPPED, PAUSED, REPEATING }
-
     /// <summary>
     /// Class describes a field of type MediaListGroup in a Json response.
     /// </summary>
