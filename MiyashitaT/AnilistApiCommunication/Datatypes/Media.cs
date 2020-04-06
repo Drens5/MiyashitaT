@@ -43,11 +43,11 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
         public string SiteUrl => siteUrl;
         public MediaSeason? Season => season;
         public int? SeasonYear => seasonYear;
-        public int Duration => duration;
+        public int? Duration => duration;
         public MediaCoverImage CoverImage => coverImage;
         public List<string> Genres => genres;
-        public int MeanScore => meanScore;
-        public int Popularity => popularity;
+        public int? MeanScore => meanScore;
+        public int? Popularity => popularity;
         public List<MediaTag> Tags => tags;
         public bool? IsAdult => isAdult;
     }

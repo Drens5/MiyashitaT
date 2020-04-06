@@ -27,6 +27,6 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
         public string Name => name;
         public string Description => description;
         public string Category => category;
-        public int Rank => rank;
+        public int? Rank => rank;
     }
 }
