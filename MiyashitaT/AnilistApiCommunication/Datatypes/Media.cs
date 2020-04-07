@@ -14,6 +14,7 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
     public class Media
     {
         private readonly int id;
+        private readonly int? idMal;
         private readonly MediaTitle title;
         private readonly MediaFormat? format;
         private readonly string description;
@@ -37,6 +38,7 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
         private readonly bool? isAdult;
 
         public int Id => id;
+        public int? IdMal => idMal;
         public MediaTitle Title => title;
         public MediaFormat? Format => format;
         public string Description => description;

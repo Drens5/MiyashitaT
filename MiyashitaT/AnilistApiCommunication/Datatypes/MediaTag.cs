@@ -21,7 +21,7 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
         private readonly string category;
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-        private readonly int rank;
+        private readonly int? rank;
 
         public int Id => id;
         public string Name => name;

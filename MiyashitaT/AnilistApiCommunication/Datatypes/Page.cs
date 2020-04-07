@@ -17,8 +17,10 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
     {
         private readonly PageInfo pageInfo;
         private readonly List<ListActivity> activities;
+        private readonly List<Media> media;
 
         public PageInfo PageInfo => pageInfo;
         public List<ListActivity> Activities => activities;
+        public List<Media> Media => media;
     }
 }

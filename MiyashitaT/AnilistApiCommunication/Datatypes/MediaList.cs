@@ -19,6 +19,13 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         private readonly int progress;
         
+        public MediaList(Media media, MediaListStatus? status, int progress)
+        {
+            this.status = status;
+            this.media = media;
+            this.progress = progress;
+        }
+
         public MediaListStatus? Status => status;
         public Media Media => media;
         public int Progress => progress;

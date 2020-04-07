@@ -15,8 +15,10 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
     {
         private readonly int currentPage;
         private readonly int lastPage;
+        private readonly bool hasNextPage;
 
         public int CurrentPage => currentPage;
         public int LastPage => lastPage;
+        public bool HasNextPage => hasNextPage;
     }
 }
