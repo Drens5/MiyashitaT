@@ -85,7 +85,7 @@ namespace MiyashitaT.AnilistApiCommunication
         /// </remarks>
         public static async Task<TopLevel> SerializeMakeSafeRequestAndDeserializeResponse(Service service)
         {
-            string serializedService = JsonConvert.SerializeObject(service);
+            string serializedService = JsonConvert.SerializeObject(service, new Newtonsoft.Json.Converters.StringEnumConverter());
             StringContent requestBody = new StringContent(serializedService, Encoding.UTF8, "application/json");
             StringContent requestBodyForRetry = new StringContent(serializedService, Encoding.UTF8, "application/json");
 

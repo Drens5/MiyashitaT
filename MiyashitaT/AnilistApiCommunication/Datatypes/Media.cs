@@ -17,6 +17,7 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
         private readonly int? idMal;
         private readonly MediaTitle title;
         private readonly MediaFormat? format;
+        private readonly MediaStatus? status;
         private readonly string description;
         private readonly string siteUrl;
         private readonly MediaSeason? season;
@@ -41,6 +42,7 @@ namespace MiyashitaT.AnilistApiCommunication.Datatypes
         public int? IdMal => idMal;
         public MediaTitle Title => title;
         public MediaFormat? Format => format;
+        public MediaStatus? Status => status;
         public string Description => description;
         public string SiteUrl => siteUrl;
         public MediaSeason? Season => season;
